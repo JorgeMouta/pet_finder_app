@@ -4,13 +4,14 @@
   "description": "An app to teach you to write React",
   "main": "src/App.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "build": "parcel build src/index.html",
     "test": "",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
-    "build": "parcel build index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Jorge Mouta <jorgegmouta@gmail.com>",
   "license": "Apache-2.0",
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
     "petfinder-client": "^1.0.2",
     "react": "^16.8.6",
