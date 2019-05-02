@@ -7,7 +7,10 @@
     "test": "",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build index.html",
+    "predeploy": "npmnpm run deploy run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Jorge Mouta <jorgegmouta@gmail.com>",
   "license": "Apache-2.0",
@@ -27,8 +30,10 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "gh-pages": "^2.0.1",
     "petfinder-client": "^1.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "homepage": "https://github.com/JorgeMouta/pet_finder_app"
 }
