@@ -4,7 +4,7 @@
   "description": "An app to teach you to write React",
   "main": "src/App.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "start": "parcel src/index.html ",
     "build": "parcel build src/index.html",
     "test": "",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
@@ -37,5 +37,5 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "homepage": "https://github.com/JorgeMouta/pet_finder_app"
+  "homepage": "https://jorgemouta.github.io/pet_finder_app/"
 }
