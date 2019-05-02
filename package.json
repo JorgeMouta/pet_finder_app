@@ -9,7 +9,7 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
     "build": "parcel build index.html",
-    "predeploy": "npmnpm run deploy run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "author": "Jorge Mouta <jorgegmouta@gmail.com>",
